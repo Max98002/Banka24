@@ -398,7 +398,11 @@ button:focus {
 
 @media (max-width: 540px) {
     .header-wrap {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+    }
+    .logo {
+        margin: 0;
     }
     .tabs {
         flex-direction: column;
@@ -430,9 +434,6 @@ button:focus {
 }
 
 @media (max-width: 420px) {
-    .logo {
-        margin-bottom: 4%;
-    }
     .nav {
         line-height: 2;
     }

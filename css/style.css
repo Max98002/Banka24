@@ -446,10 +446,16 @@ button:focus {
 
 @media (max-width: 540px) {
   .header-wrap {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo {
+    margin: 0;
   }
   .tabs {
     -webkit-box-orient: vertical;
@@ -484,9 +490,6 @@ button:focus {
 }
 
 @media (max-width: 420px) {
-  .logo {
-    margin-bottom: 4%;
-  }
   .nav {
     line-height: 2;
   }
