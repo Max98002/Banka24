@@ -15,6 +15,62 @@ body {
   padding-top: 74px;
 }
 
+.m-nav-link {
+  display: none;
+  color: #49ab3e;
+  font-size: 23px;
+}
+
+.m-nav {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  list-style: none;
+  font-size: 25px;
+  background-color: #f4f4f4;
+  z-index: 99999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 3;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.m-nav_active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.close-menu:hover {
+  cursor: pointer;
+}
+
+.close-menu {
+  position: fixed;
+  right: 5rem;
+  top: 0;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #49ab3e;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -58,12 +114,17 @@ body {
       flex-basis: 80%;
 }
 
-.nav .nav__link {
+.nav__link {
   text-transform: capitalize;
   margin-right: 20px;
   color: #95989a;
   text-decoration: none;
   font-size: 12px;
+}
+
+.m-nav .nav__link {
+  font-size: 25px;
+  line-height: 5;
 }
 
 .login {
@@ -352,6 +413,12 @@ button:focus {
 }
 
 @media (max-width: 720px) {
+  .visible-lg {
+    display: none;
+  }
+  .m-nav-link {
+    display: block;
+  }
   .header-wrap {
     -ms-flex-pack: distribute;
         justify-content: space-around;

@@ -7,22 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Банка-24</title>
 </head>
 
 <body>
+
+    <nav class="m-nav">
+        <a class="close-menu">&times;</a>
+        <a href="#" class="nav__link">Банки</a>
+        <a href="#" class="nav__link">панчохи</a>
+        <a href="#" class="nav__link">Під Подушкою</a>
+        <a href="#" class="nav__link">Страхування</a>
+        <a href="#" class="nav__link">Кешбек</a>
+    </nav>
+
     <header class="header">
         <div class="container">
             <div class="header-wrap">
                 <div class="logo">Банка<span class="logo__number">24</span></div>
-                <nav class="nav">
+                <nav class="nav  visible-lg">
                     <a href="#" class="nav__link">Банки</a>
                     <a href="#" class="nav__link">панчохи</a>
                     <a href="#" class="nav__link">Під Подушкою</a>
                     <a href="#" class="nav__link">Страхування</a>
                     <a href="#" class="nav__link">Кешбек</a>
                 </nav>
-                <a href="#" class="login">УВІЙТИ</a>
+                <a href="#" class="login visible-lg">УВІЙТИ</a>
+
+                <a href="" class="m-nav-link">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
             <!-- /.header-wrap -->
         </div>
@@ -177,6 +192,27 @@
             <p class="footer__text">Назва <span class="logo">Банка<span class="logo__number">24</span></span> вигадано і всі збіги з реальністю випадкові. Інформація на даному сайті представлена виключно в комічних цілях. Сайт не є офертою або рекламною пропозицією.</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function() {
+            var link = $('.m-nav-link');
+            var close = $('.close-menu');
+            var menu = $('.m-nav');
+
+            link.on('click', function(event) {
+                event.preventDefault();
+                menu.toggleClass('m-nav_active');
+            });
+            close.on('click', function(event) {
+                event.preventDefault();
+                menu.removeClass('m-nav_active');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
