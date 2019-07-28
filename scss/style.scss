@@ -109,7 +109,7 @@ body {
 }
 
 .tabs-content {
-    background: #f2f4ff url("/img/banka.png") no-repeat bottom right 135px;
+    background: #f2f4ff url("../img/banka.png") no-repeat bottom right 135px;
     border-radius: 10px;
     margin-bottom: 65px;
     padding-top: 40px;
@@ -162,7 +162,7 @@ button:focus {
 }
 
 .card-full {
-    background-image: url("/img/koin.png");
+    background-image: url("../img/koin.png");
     background-repeat: no-repeat;
     background-position: center right 80px;
     margin-bottom: 40px;
