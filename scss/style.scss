@@ -342,6 +342,12 @@ button:focus {
 }
 
 @media (max-width: 540px) {
+    .header-wrap {
+        flex-direction: column;
+    }
+    .tabs {
+        flex-direction: column;
+    }
     .nav {
         text-align: center;
     }
@@ -369,22 +375,6 @@ button:focus {
 }
 
 @media (max-width: 420px) {
-    .header-wrap {
-        flex-direction: column;
-    }
-    .logo {
-        margin-bottom: 2%;
-    }
-    .tabs-logo {
-        font-size: 18px;
-        margin: 5% 0;
-    }
-    .tabs {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 320px) {
     .logo {
         margin-bottom: 4%;
     }

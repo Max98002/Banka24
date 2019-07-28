@@ -378,6 +378,18 @@ button:focus {
 }
 
 @media (max-width: 540px) {
+  .header-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .nav {
     text-align: center;
   }
@@ -405,28 +417,6 @@ button:focus {
 }
 
 @media (max-width: 420px) {
-  .header-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .logo {
-    margin-bottom: 2%;
-  }
-  .tabs-logo {
-    font-size: 18px;
-    margin: 5% 0;
-  }
-  .tabs {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media (max-width: 320px) {
   .logo {
     margin-bottom: 4%;
   }
