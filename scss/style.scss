@@ -384,6 +384,7 @@ button:focus {
     }
     .tabs-logo {
         font-size: 15px;
+        text-align: center;
     }
     .tabs-menu {
         font-size: 13px;
@@ -437,12 +438,16 @@ button:focus {
     .nav {
         line-height: 2;
     }
-    .tabs-logo {
-        margin-top: 20%;
-    }
     .tabs-menu {
-        justify-content: space-around;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabs-menu__item {
+        line-height: 3;
+    }
+    .tabs-menu .tabs-menu__item::after {
+        display: none;
     }
     .tabs-content {
         padding: 0;
@@ -451,11 +456,6 @@ button:focus {
     }
     .tabs-content__title {
         font-size: 25px;
-    }
-    .tabs-content__text {
-        margin: 0;
-        margin-bottom: 10%;
-        font-size: 16px;
     }
     .section__card {
         flex-basis: 100%;
